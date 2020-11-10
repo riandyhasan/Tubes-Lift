@@ -1,0 +1,32 @@
+<!DOCTYPE html> <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Codystar&display=swap" rel="stylesheet"> 
+    <script src="eel.js"></script>
+    <script>
+        function naik(){
+            eel.naik();
+        }
+
+        function turun(){
+            eel.turun();
+        }
+
+        eel.expose(update_text);
+        function update_text(text){
+            document.querySelector(".container-bot").innerHTML = text;
+        }
+        
+    </script>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+    <div class="container-body"></div>
+    <div class="container-top">1</div>
+    <div class="container-bot">1</div>
+    <button type="button" class="atas">></button>
+    <button type="button" class="bawah">></button>
+    <button type="button" class="naik" onclick="naik()">+</button>
+    <button type="button" class="turun" onclick="turun()">-</button>
+</body>
+</html>

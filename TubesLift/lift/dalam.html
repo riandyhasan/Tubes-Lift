@@ -1,0 +1,36 @@
+<!DOCTYPE html> <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Codystar&display=swap" rel="stylesheet">
+    <script src="eel.js"></script>
+    <script>
+        function naik(){
+            eel.naik();
+        }
+
+        function turun(){
+            eel.turun();
+        }
+
+        eel.expose(update_text);
+        function update_text(text){
+            document.querySelector(".container-top").innerHTML = text;
+        }
+    </script>
+    <link rel="stylesheet" href="style-dalam.css" type="text/css">
+</head>
+<body>
+    <div class="container-body"></div>
+    <div class="container-top">1</div>
+    <button type="button" class="satu">1</button>
+    <button type="button" class="dua">2</button>
+    <button type="button" class="tiga">3</button>
+    <button type="button" class="empat">4</button>
+    <button type="button" class="lima">5</button>
+    <button type="button" class="enam">6</button>
+    <button type="button" class="buka"><||></button>
+    <button type="button" class="tutup">>||<</button>
+    <button type="button" class="bell">Bell</button>
+
+</body>
+</html>

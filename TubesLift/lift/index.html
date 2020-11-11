@@ -12,9 +12,23 @@
             eel.turun();
         }
 
+        function liftnaik(){
+            eel.liftnaik();
+        }
+
+        function liftturun(){
+            eel.liftturun();
+        }
+
+
         eel.expose(update_text);
         function update_text(text){
             document.querySelector(".container-bot").innerHTML = text;
+        }
+
+        eel.expose(update_lift);
+        function update_lift(text){
+            document.querySelector(".container-top").innerHTML = text;
         }
         
     </script>
@@ -24,8 +38,8 @@
     <div class="container-body"></div>
     <div class="container-top">1</div>
     <div class="container-bot">1</div>
-    <button type="button" class="atas">></button>
-    <button type="button" class="bawah">></button>
+    <button type="button" class="atas" onclick="liftnaik()">></button>
+    <button type="button" class="bawah" onclick="liftturun()">></button>
     <button type="button" class="naik" onclick="naik()">+</button>
     <button type="button" class="turun" onclick="turun()">-</button>
 </body>

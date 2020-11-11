@@ -1,0 +1,49 @@
+.container-body{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 300px;
+    height: 500px;
+    background: #000000;
+}
+
+.kiri{
+    position: absolute;
+    width: 150px;
+    height: 500px;
+    left: -1px;
+    top: 0px;
+    background: #9A9A9A;
+    box-shadow: inset 0px 4px 18px #636363;
+    animation: kiri 4s ease-out 1 reverse;
+}
+
+
+@keyframes kiri{
+    from {
+        left: -1px;
+    }
+    to {
+        left: -151px;
+    }
+}
+
+.kanan {
+    position: absolute;
+    width: 150px;
+    height: 500px;
+    left: 151px;
+    top: 0px;
+    background: #9A9A9A;
+    box-shadow: inset 0px 4px 18px #636363;
+    animation: kanan 4s ease-out 1 reverse;
+}
+
+@keyframes kanan{
+    from {
+        left: 151px;
+    }
+    to {
+        left: 301px;
+    }
+}

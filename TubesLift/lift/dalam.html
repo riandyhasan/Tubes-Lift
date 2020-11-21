@@ -1,19 +1,59 @@
 <!DOCTYPE html> <html lang="en">
+<title>Bagian Dalam</title>    
 <head>
     <meta charset="UTF-8">
     <link href="https://fonts.googleapis.com/css2?family=Codystar&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="eel.js"></script>
     <script>
-        function naik(){
-            eel.naik();
+        var bell = new Audio("bell.wav");
+        display1();
+
+        function display1() {
+            eel.display();
         }
 
-        function turun(){
-            eel.turun();
+        function satu(){
+            eel.satu();
+            window.location.href= "buka.html";
         }
 
-        eel.expose(update_text);
-        function update_text(text){
+        function dua(){
+            eel.dua();
+            window.location.href= "buka.html";
+        }
+
+        function tiga(){
+            eel.tiga();
+            window.location.href= "buka.html";
+        }
+
+        function empat(){
+            eel.empat();
+            window.location.href= "buka.html";
+        }
+
+        function lima(){
+            eel.lima();
+            window.location.href= "buka.html";
+        }
+
+        function enam(){
+            eel.enam();
+            window.location.href= "buka.html";
+        }
+
+        function bell(){
+            eel.bell();
+        }
+
+        eel.expose(update_lift);
+        function update_lift(text){
+            document.querySelector(".container-top").innerHTML = text;
+        }
+
+        eel.expose(display);
+        function display(text){
             document.querySelector(".container-top").innerHTML = text;
         }
     </script>
@@ -21,16 +61,15 @@
 </head>
 <body>
     <div class="container-body"></div>
-    <div class="container-top">1</div>
-    <button type="button" class="satu">1</button>
-    <button type="button" class="dua">2</button>
-    <button type="button" class="tiga">3</button>
-    <button type="button" class="empat">4</button>
-    <button type="button" class="lima">5</button>
-    <button type="button" class="enam">6</button>
-    <button type="button" class="buka"><||></button>
-    <button type="button" class="tutup">>||<</button>
-    <button type="button" class="bell">Bell</button>
-
+    <div class="container-top"></div>
+    <button type="button" class="satu" onclick="satu()">1</button>
+    <button type="button" class="dua" onclick="dua()">2</button>
+    <button type="button" class="tiga" onclick="tiga()">3</button>
+    <button type="button" class="empat" onclick="empat()">4</button>
+    <button type="button" class="lima" onclick="lima()">5</button>
+    <button type="button" class="enam" onclick="enam()">6</button>
+    <button type="button" class="buka" onclick="location.href='buka.html'"><||></button>
+    <button type="button" class="tutup" onclick="location.href='tutup.html'">>||<</button>
+    <button type="button" class="bell"  onclick="bell.play()" onclick="bell()"><i class="fa fa-bell" aria-hidden="true"></i></button>
 </body>
 </html>

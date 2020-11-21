@@ -1,7 +1,3 @@
-body {
-    font-family: 'Codystar', cursive;
-}
-
 .container-body{
     position: absolute;
     left: 0;
@@ -19,6 +15,7 @@ body {
     left: 32px;
     top: 41px;
     background: #000000;
+    font-family: 'Codystar', cursive;
     font-size: 185px;
     color: #FF0000;
     text-align: center;
@@ -26,13 +23,6 @@ body {
     animation:blinkingText 1.2s infinite;
 }
 
-@keyframes blinkingText {
-    0%{     color: #FF0000;}
-    49%{    color: #FF0000;}
-    60%{    color: transparent;}
-    99%{    color: transparent; }
-    100%{   color: #FF0000;}
-}
 
 .satu {
     position: absolute;
@@ -50,6 +40,10 @@ body {
     
 }
 
+.satu:focus {
+    border: 4px solid #f50000;
+    color: #f50000
+}
 .dua {
     position: absolute;
     width: 60px;
@@ -64,6 +58,11 @@ body {
     text-align: center;
     color: #000000
     
+}
+
+.dua:focus {
+    border: 4px solid #f50000;
+    color: #f50000
 }
 
 .tiga {
@@ -82,6 +81,11 @@ body {
     
 }
 
+.tiga:focus {
+    border: 4px solid #f50000;
+    color: #f50000
+}
+
 .empat {
     position: absolute;
     width: 60px;
@@ -96,6 +100,11 @@ body {
     text-align: center;
     color: #000000
     
+}
+
+.empat:focus {
+    border: 4px solid #f50000;
+    color: #f50000
 }
 
 .lima {
@@ -114,6 +123,11 @@ body {
     
 }
 
+.lima:focus {
+    border: 4px solid #f50000;
+    color: #f50000
+}
+
 .enam {
     position: absolute;
     width: 60px;
@@ -128,6 +142,11 @@ body {
     text-align: center;
     color: #000000
     
+}
+
+.enam:focus {
+    border: 4px solid #f50000;
+    color: #f50000
 }
 
 .buka {
@@ -146,6 +165,11 @@ body {
     
 }
 
+.buka:focus {
+    border: 4px solid #f50000;
+    color: #f50000
+}
+
 .tutup {
     position: absolute;
     width: 70px;
@@ -162,6 +186,11 @@ body {
     
 }
 
+.tutup:focus {
+    border: 4px solid #f50000;
+    color: #f50000
+}
+
 .bell {
     position: absolute;
     width: 70px;
@@ -176,6 +205,11 @@ body {
     text-align: center;
     color: #000000
     
+}
+
+.bell:focus {
+    border: 4px solid #f50000;
+    color: #f50000
 }
 
 

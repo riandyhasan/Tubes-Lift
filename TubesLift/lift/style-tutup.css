@@ -47,3 +47,31 @@
         left: 301px;
     }
 }
+
+.luar{   
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    left: 17px;
+    top: 452px;
+    background: #646464;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 8px;
+    text-align: center;
+    color: #ffffff
+}
+
+.dalam{
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    left: 245px;
+    top: 452px;
+    background: #646464;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 8px;
+    text-align: center;
+    color: #ffffff
+}

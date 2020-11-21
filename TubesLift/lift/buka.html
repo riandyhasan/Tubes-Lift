@@ -1,20 +1,9 @@
 <!DOCTYPE html> <html lang="en">
+<title>Lift Membuka</title>
 <head>
     <meta charset="UTF-8">
     <script src="eel.js"></script>
     <script>
-        function naik(){
-            eel.naik();
-        }
-
-        function turun(){
-            eel.turun();
-        }
-
-        eel.expose(update_text);
-        function update_text(text){
-            document.querySelector(".container-top").innerHTML = text;
-        }
     </script>
     <link rel="stylesheet" href="style-buka.css" type="text/css">
 </head>
@@ -22,5 +11,7 @@
     <div class="container-body"></div>
     <div class="kiri"></div>
     <div class="kanan"></div>
+    <button type="button" class="dalam" onclick="location.href='dalam.html'">Dalam</button>
+    <button type="button" class="luar" onclick="location.href='luar.html'">Luar</button>
 </body>
 </html>

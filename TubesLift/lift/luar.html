@@ -1,0 +1,72 @@
+<!DOCTYPE html> <html lang="en">
+<title>Bagian Luar</title>    
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Codystar&display=swap" rel="stylesheet"> 
+    <script src="eel.js"></script>
+    <script>
+        display1();
+
+        user1();
+
+        function user1(){
+            eel.userdis();
+        }
+
+        function display1() {
+            eel.display();
+        }
+
+        function naik(){
+            eel.naik();
+        }
+
+        function turun(){
+            eel.turun();
+        }
+
+        function liftnaik(){
+            eel.liftnaik();
+            window.location.href= "buka.html";
+        }
+
+        function liftturun(){
+            eel.liftturun();
+            window.location.href= "buka.html"
+        }
+
+        eel.expose(update_text);
+        function update_text(text){
+            document.querySelector(".container-bot").innerHTML = text;
+        }
+
+        
+        eel.expose(update_user);
+        function update_user(text){
+            document.querySelector(".container-bot").innerHTML = text;
+        }
+
+
+        eel.expose(update_lift);
+        function update_lift(text){
+            document.querySelector(".container-top").innerHTML = text;
+        }
+
+        eel.expose(display);
+        function display(text){
+            document.querySelector(".container-top").innerHTML = text;
+        }
+        
+    </script>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+    <div class="container-body"></div>
+    <div class="container-top"></div>
+    <div class="container-bot"></div>
+    <button type="button" class="atas" onclick="liftnaik()">></button>
+    <button type="button" class="bawah" onclick="liftturun()">></button>
+    <button type="button" class="naik" onclick="naik()">+</button>
+    <button type="button" class="turun" onclick="turun()">-</button>
+</body>
+</html>
